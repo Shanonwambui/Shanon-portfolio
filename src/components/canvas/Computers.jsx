@@ -1,6 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import "../canvas/"; 
 
 import CanvasLoader from "../Loader";
 
@@ -22,7 +23,7 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.7}
-        position={isMobile ? [0, -1.85, -2.2] : [0, -3.55, -1.5]}
+        position={isMobile ? [0, -3.1, -2.2] : [0, -3.7, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -60,6 +61,8 @@ const ComputersCanvas = () => {
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      className="canvas"
+      
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
