@@ -19,10 +19,10 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Shanon</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2  text-white-100`}>
-          I craft intuitive interfaces and <br className='sm:block hidden' />
-          immersive 3D visuals.   Blending <br className='sm:block hidden' />
-          front-end magic with back-end logic <br className='sm:block hidden' />
-           to bring ideas to life.   </p>
+          I craft intuitive  and responsive<br className='sm:block hidden' />
+           interfaces.  Blending front-end<br className='sm:block hidden' />
+           magic with back-end logic to  <br className='sm:block hidden' />
+           bring ideas to life.   </p>
         </div>
       </div>
 
