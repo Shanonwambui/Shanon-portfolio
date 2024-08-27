@@ -20,7 +20,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2  text-white-100`}>
           I craft intuitive  and responsive <br className='sm:block hidden' />
-           interfaces.  Blending front-end<br className='sm:block hidden' />
+           interfaces.  Blending front-end <br className='sm:block hidden' />
            magic with back-end logic to  <br className='sm:block hidden' />
            bring ideas to life.   </p>
         </div>
