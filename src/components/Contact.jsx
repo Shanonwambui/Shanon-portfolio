@@ -29,42 +29,47 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    // Validation check
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
     setLoading(true);
 
-    emailjs
-      .send(
-        'service_8ws17jj',
-        'template_5kihcga',
-        {
-          from_name: form.name,
-          to_name: "Shanon",
-          from_email: form.email,
-          to_email: "shanonwambui24@gmail.com",
-          message: form.message,
-        },
-        'aDdbZfRRdsDpRE6Ft'
-      
-      )
-      .then(
-        () => {
-          setLoading(false);
-          console.log(form.name, form.email, form.message);
-          alert("Thank you. I will get back to you as soon as possible.");
+     emailjs
+    .send(
+      'service_8ws17jj',
+      'template_5kihcga',
+      {
+        from_name: form.name,
+        to_name: "Shanon",
+        from_email: form.email,
+        to_email: "shanonwambui24@gmail.com",
+        message: form.message,
+      },
+      'aDdbZfRRdsDpRE6Ft'
+    )
+    .then(
+      () => {
+        setLoading(false);
+        alert("Thank you. I will get back to you as soon as possible.");
 
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      },
+      (error) => {
+        setLoading(false);
+        console.error(error);
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+        alert("Ahh, something went wrong. Please try again.");
+      }
+    );
 
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
   };
 
   return (
