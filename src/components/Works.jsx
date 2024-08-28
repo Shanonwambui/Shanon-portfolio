@@ -15,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  demo
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -25,8 +26,9 @@ const ProjectCard = ({
           speed: 450,
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        
       >
-        <div className='relative w-full h-[150px]'>
+        <div className='relative w-full h-[150px]' onClick={() => window.open(demo, "_blank")} >
           <img
             src={image}
             alt='project_image'
@@ -88,9 +90,9 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 flex flex-wrap gap-7' >
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={`project-${index}`} index={index} {...project}  />
         ))}
       </div>
     </>

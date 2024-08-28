@@ -220,6 +220,7 @@ import {
       ],
       image: admin,
       source_code_link: "https://github.com/Shanonwambui/dashboard-react",
+      demo: "https://chic-cupcake-be3def.netlify.app/ "
     },
     {
       name: "Crypto Dashboard",
@@ -241,6 +242,7 @@ import {
       ],
       image: crypto,
       source_code_link: "https://github.com/Shanonwambui/crypto_dashboard",
+      demo: "https://6649b53d1f6a900008100c00--jolly-concha-fcbe72.netlify.app/"
     },
     {
       name: "Test Automation",
@@ -259,6 +261,7 @@ import {
       ],
       image: test,
       source_code_link: "https://github.com/Shanonwambui/Test-automation",
+      demo: "https://www.automationexercise.com/"
     },
   ];
   
