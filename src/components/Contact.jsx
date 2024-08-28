@@ -36,6 +36,13 @@ const Contact = () => {
       return;
     }
 
+      // Regex to validate email format
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(form.email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
     setLoading(true);
 
      emailjs
