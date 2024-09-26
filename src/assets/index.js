@@ -29,6 +29,7 @@ import tesla from "./company/tesla.png";
 import numeral from "./company/numeral.png";
 import jpmorgan from "./company/jpmorgan.png";
 import africa from "./company/africa.png";
+import zola from "./company/zola.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -78,5 +79,6 @@ export {
   test,
   zan,
   simon,
-  brian
+  brian,
+  zola
 };

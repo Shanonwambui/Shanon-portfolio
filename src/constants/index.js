@@ -32,6 +32,7 @@ import {
     zan,
     simon,
     brian,
+    zola
   } from "../assets";
   
   export const navLinks = [
@@ -124,34 +125,19 @@ import {
   ];
   
   const experiences = [
-    
     {
-      title: " Software Developer Intern",
-      company_name: " Numeral IOT",
-      icon: numeral,
+      title: " Software Developer ",
+      company_name: " Zola Reviews",
+      icon: zola,
       iconBg: "#E6DEDD",
-      date: " Jan 2022 - April 2023",
+      date: " Sep 2024 - to date",
       points: [
-   
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Lightning Developer Bootcamp ",
-      company_name: "Africa Free Routing",
-      icon: africa,
-      iconBg: "#383E56",
-      date: " May2024 - June 2024",
-      points: [
-        "Tackled real-world challenges Africa faces and how the Lightning Network can address them",
-        "Integrated the IBEX API to build a lightning network application",
-        "Used the bitcoin lightning network to build a decentralized application that allows users to send and receive payments.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-
-                
+        "Built scalable RESTful APIs using Django framework.",
+        "Implemented robust user authentication and authorization mechanisms.",
+        "Utilized PostgreSQL as the primary database for efficient data management",
+        "Seamlessly integrated with AWS S3 bucket for cloud storage and file management",
+        "Streamlined development and deployment processes using CI/CD pipelines."
+        
       ],
     },
     {
@@ -168,6 +154,39 @@ import {
         "Open source contribution"
       ],
     },
+
+    {
+      title: "Lightning Developer Bootcamp ",
+      company_name: "Africa Free Routing",
+      icon: africa,
+      iconBg: "#383E56",
+      date: " May2024 - June 2024",
+      points: [
+        "Tackled real-world challenges Africa faces and how the Lightning Network can address them",
+        "Integrated the IBEX API to build a lightning network application",
+        "Used the bitcoin lightning network to build a decentralized application that allows users to send and receive payments.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+
+                
+      ],
+    },
+    
+    {
+      title: " Software Developer Intern",
+      company_name: " Numeral IOT",
+      icon: numeral,
+      iconBg: "#E6DEDD",
+      date: " Jan 2022 - April 2023",
+      points: [
+   
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    
+    
   ];
   
   const testimonials = [

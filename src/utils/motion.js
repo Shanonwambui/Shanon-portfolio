@@ -36,6 +36,8 @@ export const textVariant = (delay) => {
       },
     };
   };
+
+  
   
   export const zoomIn = (delay, duration) => {
     return {

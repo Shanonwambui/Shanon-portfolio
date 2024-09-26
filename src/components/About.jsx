@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -49,6 +49,32 @@ const About = () => {
       >
         Passionate about crafting innovative software solutions, I bring expertise in TypeScript, JavaScript, Java, Python, C++, and frameworks like React, Angular, Springboot, and Matlab. Let's work together to turn your vision into a reality!
       </motion.p>
+     <div className="flex sx:flex-col gap-6">
+      
+     <motion.button
+      variants={textVariant(0.2)} // Use textVariant as the default variant
+      initial="hidden"
+      animate="show"
+      whileHover={{ scale: 1.1 }} // Add this line to apply zoom effect on hover
+      className='text-white font-bold h-[50px]  px-12 rounded-[50px] shadow-button mt-10 bg-[#915EFF] '
+    >
+       <a href="https://www.linkedin.com/in/wambui-shanon" target="_blank" rel="noreferrer"> LinkedIn </a>
+    
+    </motion.button>
+
+
+    <motion.button
+      variants={textVariant(0.2)} // Use textVariant as the default variant
+      initial="hidden"
+      animate="show"
+      whileHover={{ scale: 1.1 }} // Add this line to apply zoom effect on hover
+      className='text-white font-bold h-[50px]  px-12 rounded-[50px] shadow-button mt-10 bg-[#915EFF] '
+    >
+       <a href="https://github.com/Shanonwambui/resume/blob/main/Shanon-resume-2024.pdf" target="_blank" rel="noreferrer"> Resume  </a>
+    
+    </motion.button>
+
+     </div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
