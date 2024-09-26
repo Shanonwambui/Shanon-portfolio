@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Passionate about crafting innovative software solutions, I bring expertise in TypeScript, JavaScript, Java, Python, C++, and frameworks like React, Angular, Springboot, and Matlab. Let's work together to turn your vision into a reality!
+        Passionate about crafting innovative software solutions, I bring expertise in TypeScript, JavaScript, Java, Python, C++, and frameworks like React, Angular, Springboot, Django and Matlab. Let's work together to turn your vision into a reality!
       </motion.p>
      <div className="flex sx:flex-col gap-6">
       
