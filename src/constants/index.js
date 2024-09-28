@@ -261,7 +261,7 @@ import {
       ],
       image: crypto,
       source_code_link: "https://github.com/Shanonwambui/crypto_dashboard",
-      demo: "https://6649b53d1f6a900008100c00--jolly-concha-fcbe72.netlify.app/"
+      demo: "https://jolly-concha-fcbe72.netlify.app/"
     },
     {
       name: "Test Automation",
