@@ -15,11 +15,17 @@ import { textVariant } from "../utils/motion";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
-      }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+    contentStyle={{
+    background: "#111827",
+    color: "#fff",
+    borderRadius: "12px",
+    border: "1px solid transparent",
+    backgroundImage: "linear-gradient(#111827, #111827), linear-gradient(90deg, #A78BFA, #EC4899)",
+    backgroundOrigin: "border-box",
+    backgroundClip: "padding-box, border-box",
+   
+  }}
+      contentArrowStyle={{ borderRight: "7px solid  #EC4899" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -35,7 +41,7 @@ const ExperienceCard = ({ experience }) => {
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='text-blue text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
           {experience.company_name}

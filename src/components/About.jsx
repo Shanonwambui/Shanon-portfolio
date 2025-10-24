@@ -45,9 +45,9 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-white text-[17px] max-w-3xl leading-[30px]'
       >
-        Passionate about crafting innovative software solutions, I bring expertise in TypeScript, JavaScript, Java, Python, C++, and frameworks like React, Angular, Springboot, Django and Matlab. Let's work together to turn your vision into a reality!
+       I’m a Fullstack Engineer with a foundation in Electrical & Electronics Engineering, bringing a problem-solving mindset to building intuitive, scalable, and user-centered applications. I specialize in crafting software that balances design, performance, and accessibility for diverse users worldwide. My expertise spans frontend (React, Angular), backend (Spring Boot, Django), and programming in TypeScript, JavaScript, Java, Python, and C++. Let’s work together to turn ideas into impactful digital solutions.
       </motion.p>
      <div className="flex sx:flex-col gap-6">
       
@@ -56,7 +56,7 @@ const About = () => {
       initial="hidden"
       animate="show"
       whileHover={{ scale: 1.1 }} // Add this line to apply zoom effect on hover
-      className='text-white font-bold h-[50px]  px-12 rounded-[50px] shadow-button mt-10 bg-[#915EFF] '
+      className='text-white font-bold h-[50px]  md:px-12 px-8 rounded-[50px] shadow-button mt-10 bg-primary '
     >
        <a href="https://www.linkedin.com/in/wambui-shanon" target="_blank" rel="noreferrer"> LinkedIn </a>
     
@@ -68,7 +68,7 @@ const About = () => {
       initial="hidden"
       animate="show"
       whileHover={{ scale: 1.1 }} // Add this line to apply zoom effect on hover
-      className='text-white font-bold h-[50px]  px-12 rounded-[50px] shadow-button mt-10 bg-[#915EFF] '
+      className='text-white font-bold h-[50px]  md:px-12 px-8  rounded-[50px] shadow-button mt-10 border border-primary '
     >
        <a href="https://github.com/Shanonwambui/resume/blob/main/Shanon-resume-2024.pdf" target="_blank" rel="noreferrer"> Resume  </a>
     

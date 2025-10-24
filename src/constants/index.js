@@ -32,7 +32,8 @@ import {
     zan,
     simon,
     brian,
-    zola
+    zola,
+    kommitly
   } from "../assets";
   
   export const navLinks = [
@@ -217,6 +218,55 @@ import {
   ];
   
   const projects = [
+     {
+      name: "Kommitly",
+      description:
+        "Kommitly is an accountability app that uses AI to break down goals into manageable tasks, set timelines, send reminders, and track progress to help users stay consistent.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "green-text-gradient",
+        },
+      
+     
+        {
+          name: "MUI Charts",
+          color: "pink-text-gradient",
+        },
+        
+      ],
+      image: kommitly,
+      source_code_link: "https://kommitly.com/",
+      demo: "https://kommitly.com/"
+    },
+
+    {
+      name: "Crypto Dashboard",
+      description:
+        "This dashboard uses the CoinGecko API to fetch real time crypto data. ",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Redux",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: crypto,
+      source_code_link: "https://github.com/Shanonwambui/crypto_dashboard",
+      demo: "https://jolly-concha-fcbe72.netlify.app/"
+    },
+
     {
       name: "Admin Dashboard",
       description:
@@ -241,28 +291,7 @@ import {
       source_code_link: "https://github.com/Shanonwambui/dashboard-react",
       demo: "https://chic-cupcake-be3def.netlify.app/ "
     },
-    {
-      name: "Crypto Dashboard",
-      description:
-        "This dashboard uses the CoinGecko API to fetch the latest crypto data. It has a search bar to search for a specific cryptocurrency and a chart to display the price history.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Redux",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: crypto,
-      source_code_link: "https://github.com/Shanonwambui/crypto_dashboard",
-      demo: "https://jolly-concha-fcbe72.netlify.app/"
-    },
+    
     {
       name: "Test Automation",
       description:

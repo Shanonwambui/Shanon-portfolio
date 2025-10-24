@@ -45,8 +45,8 @@
 
 .green-pink-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(180.13deg, #EC4899 1.9%, #A78BFA 97.5%);
+  background: -webkit-linear-gradient(-180.13deg, #EC4899 1.9%, #A78BFA 97.5%);
 }
 
 .orange-text-gradient {
@@ -66,16 +66,16 @@
 }
 
 .green-text-gradient {
-  background: #11998e; /* fallback for old browsers */
+  background: #A78BFA; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #11998e,
-    #38ef7d
+    #EC4899,
+    #A78BFA
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #11998e,
-    #38ef7d
+    #EC4899,
+    #A78BFA
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -203,3 +203,32 @@
   }
 }
 
+.vertical-timeline-element-content {
+ box-shadow: none !important;
+ 
+
+ 
+  border: "2px solid transparent",
+
+}
+
+
+.vertical-timeline::before {
+  width: 1px !important; /* adjust to make thinner */
+  background: linear-gradient(180deg, #A78BFA, #EC4899); /* optional: gradient line */
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: none !important; /* removes the thick border/shadow */
+  border: 1px solid #A78BFA !important; /* thinner custom border */
+ 
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
